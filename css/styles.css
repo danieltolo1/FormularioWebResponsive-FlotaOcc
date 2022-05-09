@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+
+
+
+*{
+   margin:0 auto;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-family: 'Roboto', sans-serif;
+
+    
+}
+
+
+body{
+    background:#59ABE3;
+    margin:0
+}
+
+
+
+/*MAQUETACION PARA DISPOSITIVOS HASTA 839PX*/
+
+
+.form{
+    width:839px;
+    
+    background:#eae5e1;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    margin:calc(50vh - 220px) auto;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+    
+}
+
+.form__h2{
+    text-align: center;
+    margin:10px 0;
+    padding-bottom:10px;
+    width:100%;
+    color:#010f4f;
+    display: block;
+}
+
+
+input{
+    width:100%;
+    background-color:#fff;
+    padding:10px;
+    font-family:'Montserrat',sans-serif;
+    transition:all .3s;
+    border-radius: 10px;
+    display: block;
+    
+}
+
+input:focus{
+    border:2px solid #010f4f;;
+}
+
+
+.form__h2__p:before{
+    content:attr(type);
+    display:block;
+    margin:28px 0 0;
+    font-size:14px;
+    color:#5a5a5a
+}
+
+
+
+
+
+button{
+    
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-family:'Montserrat';
+    border:2px solid #78788c;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s;
+    
+}
+
+button:hover{
+    background:#78788c;
+    color:#fff
+}
+
+.form__card{
+    
+    
+    background:#50505a;
+    color:#fff;
+    width: 95%;
+    padding:16px 4px 16px 0;
+    border-radius:6px;
+    font-size:13px;
+    box-shadow:10px 10px 40px -14px #000;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;    
+}
+
+.form__card__image{
+    width: 95%;
+    border-radius: 10px;
+}
+
+.form__card__resume{
+    width: 95%;
+    margin-top: 20px;
+   
+    background-color: #010f4f;
+    color:#fff;
+    border-radius: 10px;
+    
+}
+
+
+.form__card__resume--h5{
+    text-align: center;
+    font-size: larger;
+   
+    text-justify: inter-word;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
+}
+
+
+/*ESTILOS PARA LOS CHECK BOX */
+
+input[type=checkbox] {
+	visibility: hidden;
+}
+
+.form__parrafo__divcheckBox {
+	display: inline-block;
+	position: relative;
+    width: 70px;
+	height: 30px;
+	background: #555;
+	border-radius: 15px;
+	box-shadow: inset 0px 1px 1px rgba(0,0,0,0.6), 0px 1px 0px rgba(255,255,255,0.3);   
+}
+
+.form__parrafo__divcheckBox label {
+
+    /* aspecto */
+    display: block;
+    width: 34px;
+	height: 20px;
+	border-radius: 17px;
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.35);
+	background: #fcfff4;
+	background: linear-gradient(to top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    cursor: pointer;
+    
+    /* Posicionamiento */
+    position: absolute;
+    top: 5px;
+	left: 5px;
+    z-index: 1;
+    
+	/* Comportamiento */
+    transition: all .4s ease;
+    
+    /* ocultar el posible texto que tenga */
+    overflow: hidden;
+    text-indent: 35px;  
+    transition: text-indent 0s;
+}
+
+/* estado activado */
+.form__parrafo__divcheckBox input[type=checkbox]:checked + label {
+	left: auto;
+    right: 5px;
+}
+
+
+.form__parrafo__divcheckBox:before {
+	content: 'SÍ';
+	font: 12px/30px Arial, sans-serif;
+	color: lime;
+	position: absolute;
+	left: 10px;
+	z-index: 0;
+	font-weight: bold;
+}
+
+.form__parrafo {
+    margin-top: 30px;
+    background:#fff;
+    color:eae5e1;
+    width: 95%;
+    padding:16px 4px 16px 0;
+    border-radius:6px;
+    box-shadow:10px 10px 40px -14px #000;
+    display:flex;
+    justify-content: center;
+   
+}
+
+
+.form__parrafo__p{
+    margin-left: 3%;
+    margin-right: 3px;
+    font-size:13px;
+    font:12px/30px;
+}
+
+.card__image__des{
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .imgcheckB{
+      width: 100px;
+      height: 100px;
+  }

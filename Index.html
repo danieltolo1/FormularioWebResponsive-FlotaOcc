@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/e24ec5b62f.js" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Formulario</title>
+</head>
+<body>
+    <head>
+
+    </head>
+    <main>
+        <!--COMIENZO DEL FORMULARIO-->
+        <form class="form">
+            <h2 class="form__h2">TU OPINION NOS IMPORTA</h2>
+
+            <!--CARD QUE CONTIENE LA IMAGEN Y ADEMAS LA BIENVENIDA AL FORMULARIO-->
+            <div class="form__card">
+                <img class="form__card__image" src="./img/granEmp.jpg">
+                <div class="form__card__resume">
+                    <h5 class="form__card__resume--h5">Nos gustaria recibir tus comentarios para poder seguir mejorando
+                    nuestro servicio.</br>
+                    Llena este Formulario y comparte tus opiniones con nosotros </h5>
+                </div>
+            </div>
+                
+            <!--ACA COMIENZA LOS CONTENEDORES DE LAS PREGUNTAS-->
+
+
+            <!--CONTENEDOR DE LA PREGUNTA 1-->
+            <div id="check"  class="form__parrafo">
+               <p class="form__parrafo__p">La empresa cumplio con la promesa de venta en la "Hora de Salida"</p>
+                <div class="form__parrafo__divcheckBox">
+                    <input type="checkbox" id="checkAvanzado" value="Valor" onchange="verificar1()"/ required>
+                    <label id="labelSiNo" for="checkAvanzado"/>
+                </div>
+
+                <!--MINI CONTENEDOR DE LA IMAGEN RENDERIZADA-->
+                <div id="imgcheckB" class="imgcheckB" >
+                </div>
+            </div>
+                
+            <!--CONTENEDOR DE LA PREGUNTA 2-->
+            <div id="check"  class="form__parrafo">
+                <p class="form__parrafo__p">La empresa cumplio con la promesa de venta en la "Hora de Salida"</p>
+                 <div class="form__parrafo__divcheckBox">
+                     <input type="checkbox" id="checkAvanzado1" value="Valor" onchange="verificar()"/ required>
+                     <label id="labelSiNo" for="checkAvanzado1"/>
+                 </div>
+ 
+                 <!--MINI CONTENEDOR DE LA IMAGEN RENDERIZADA-->
+                 <div id="imgcheckB" class="imgcheckB" >
+                 </div>
+             </div>
+
+
+
+
+            <button type="button" value="verificar" onclick=""> Enviar</button>
+            
+      </form>
+    </main>
+
+
+    <script  src="./js/index.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js" ></script>
+</body>
+</html>
