@@ -10,34 +10,53 @@
     <title>Formulario</title>
 </head>
 <body>
-    <head>
+    <header class="header">
+        <div class="header__divh2">
+            <h2 class="header__h2">TU OPINION NOS IMPORTA</h2>
+         </div>
 
-    </head>
-    <main>
+    </header>
+    <main class="main">
         <!--COMIENZO DEL FORMULARIO-->
-        <form class="form">
-            <h2 class="form__h2">TU OPINION NOS IMPORTA</h2>
+        <form id="form" class="form">
 
             <!--CARD QUE CONTIENE LA IMAGEN Y ADEMAS LA BIENVENIDA AL FORMULARIO-->
             <div class="form__card">
-                <img class="form__card__image" src="./img/granEmp.jpg">
                 <div class="form__card__resume">
                     <h5 class="form__card__resume--h5">Nos gustaria recibir tus comentarios para poder seguir mejorando
                     nuestro servicio.</br>
                     Llena este Formulario y comparte tus opiniones con nosotros </h5>
                 </div>
+                <div   class="form__parrafoNbus">
+                    <label class="Nbus" id="Nbus" for="NumeroBus"> # del Bus</label>
+                    <input name="numerBus" Class="numberBus" type="number" id="numberBus"/>
+                    <img class="icobus" src="./img/ico_bus.png" alt="busico">
+                </div>
             </div>
                 
             <!--ACA COMIENZA LOS CONTENEDORES DE LAS PREGUNTAS-->
 
+            
 
-            <!--CONTENEDOR DE LA PREGUNTA 1-->
+            </div>
+
+            <!-------------CONTENEDOR DE LA PREGUNTA 1------------------------------------------->
             <div id="check"  class="form__parrafo">
-               <p class="form__parrafo__p">La empresa cumplio con la promesa de venta en la "Hora de Salida"</p>
-                <div class="form__parrafo__divcheckBox">
-                    <input type="checkbox" id="checkAvanzado" value="Valor" onchange="verificar1()"/ required>
-                    <label id="labelSiNo" for="checkAvanzado">SI</label>
-                    
+                <div class="form__subparrafo">
+                    <p class="form__parrafo__p">La empresa cumplio con la promesa de venta en la "Hora de Salida"</p>
+                    <div class="form__parrafo__divcheckBox">
+                        <input name="Qsi1" type="checkbox" id="checkAvanzadoSi" value="Valor" onchange="showContentSi()" onclick="seleccionar()"/>
+                        <label class="labelsi" id="labelSiNo" for="checkAvanzadoSi">SI</label>
+                    <div class="form__parrafo__divcheckBox">
+                        <input name="Qno1" type="checkbox" id="checkAvanzadoNo" value="Valor" onchange="showContentNo()" onclick="seleccionar()" />
+                        <label class="labelno" id="labelSiNo" for="checkAvanzadoNo">NO</label>
+                    </div>
+                    </div>
+                </div> 
+                 <div>
+                     <div id="content" class= "form__parrafo__TextArea" >
+                        <textarea class="form__parrafo__TextareaR" name="textno1" rows="4" placeholder="Porque No.."  ></textarea>
+                    </div>
                 </div>
 
                 <!--MINI CONTENEDOR DE LA IMAGEN RENDERIZADA-->
@@ -45,23 +64,82 @@
                 </div>
             </div>
                 
-            <!--CONTENEDOR DE LA PREGUNTA 2-->
+
+             <!-------------------CONTENEDOR DE LA PREGUNTA 2-------------------------------------------->
+             <div id="check"  class="form__parrafo">
+                <div class="form__subparrafo">
+                    <p class="form__parrafo__p">El trato del personal de la organizacion fue amable y cordial"</p>
+                    <div class="form__parrafo__divcheckBox">
+                        <input name="Qsi2" type="checkbox" id="checkAvanzadoSi2" value="Valor" onchange="showContentSi2()" onclick="seleccionar2()"/>
+                        <label class="labelsi" id="labelSiNo" for="checkAvanzadoSi2">SI</label>
+                    <div class="form__parrafo__divcheckBox">
+                        <input name="Qno2" type="checkbox" id="checkAvanzadoNo2" value="Valor" onchange="showContentNo2()" onclick="seleccionar2()" />
+                        <label class="labelno" id="labelSiNo" for="checkAvanzadoNo2">NO</label>
+                    </div>
+                    </div>
+                </div> 
+                 <div>
+                     <div id="content2" class= "form__parrafo__TextArea" >
+                        <textarea class="form__parrafo__TextareaR" name="textno2" rows="4" placeholder="porque No.." ></textarea>
+                    </div>
+                </div>
+
+                <!--MINI CONTENEDOR DE LA IMAGEN RENDERIZADA-->
+                <div id="imgcheckB" class="imgcheckB" >
+                </div>
+            </div>
+
+
+             <!------------------------------CONTENEDOR DE LA PREGUNTA 3------------------------------------->
+             <div id="check"  class="form__parrafo">
+                <div class="form__subparrafo">
+                    <p class="form__parrafo__p">El vehiculo es comodo, confortable, limpio y se encuentra en buen estado?"</p>
+                    <div class="form__parrafo__divcheckBox">
+                        <input name="Qsi3" type="checkbox" id="checkAvanzadoSi3" value="Valor" onchange="showContentSi3()" onclick="seleccionar3()"/>
+                        <label class="labelsi" id="labelSiNo" for="checkAvanzadoSi3">SI</label>
+                    <div class="form__parrafo__divcheckBox">
+                        <input name="Qno3" type="checkbox" id="checkAvanzadoNo3" value="Valor" onchange="showContentNo3()" onclick="seleccionar3()" />
+                        <label class="labelno" id="labelSiNo" for="checkAvanzadoNo3">NO</label>
+                    </div>
+                    </div>
+                </div> 
+                 <div>
+                     <div id="content3" class= "form__parrafo__TextArea" >
+                        <textarea class="form__parrafo__TextareaR" name="textno3" rows="4" placeholder="porque No.." ></textarea>
+                    </div>
+                </div>
+
+                <!--MINI CONTENEDOR DE LA IMAGEN RENDERIZADA-->
+                <div id="imgcheckB" class="imgcheckB" >
+                </div>
+            </div>
+
+            <!------------------------------CONTENEDOR DE LA PREGUNTA 4------------------------------------->
             <div id="check"  class="form__parrafo">
-                <p class="form__parrafo__p">La empresa cumplio con la promesa de venta en la "Hora de Salida"</p>
-                 <div class="form__parrafo__divcheckBox">
-                     <input type="checkbox" id="checkAvanzado1" value="Valor" onchange="verificar()"/ required>
-                     <label id="labelSiNo" for="checkAvanzado1"/>
-                 </div>
- 
-                 <!--MINI CONTENEDOR DE LA IMAGEN RENDERIZADA-->
-                 <div id="imgcheckB" class="imgcheckB" >
-                 </div>
-             </div>
+                <div class="form__subparrafo">
+                    <p class="form__parrafo__p">Considera que el Conductor fue prudente en la forma de Conducir?"</p>
+                    <div class="form__parrafo__divcheckBox">
+                        <input name="Qsi4"  type="checkbox" id="checkAvanzadoSi4" value="Valor" onchange="showContentSi4()" onclick="seleccionar4()"/>
+                        <label class="labelsi" id="labelSiNo" for="checkAvanzadoSi4">SI</label>
+                    <div class="form__parrafo__divcheckBox">
+                        <input name="Qno4" type="checkbox" id="checkAvanzadoNo4" value="Valor" onchange="showContentNo4()" onclick="seleccionar4()" />
+                        <label class="labelno" id="labelSiNo" for="checkAvanzadoNo4">NO</label>
+                    </div>
+                    </div>
+                </div> 
+                 <div>
+                     <div id="content4" class= "form__parrafo__TextArea" >
+                        <textarea class="form__parrafo__TextareaR" name="textno4" rows="4" placeholder="porque No.." ></textarea>
+                    </div>
+                </div>
+
+                <!--MINI CONTENEDOR DE LA IMAGEN RENDERIZADA-->
+                <div id="imgcheckB" class="imgcheckB" >
+                </div>
+            </div>
 
 
-
-
-            <button type="button" value="verificar" onclick=""> Enviar</button>
+    <button class="ButtonSend" type="submit"  onclick="datosFormulario()"> Enviar</button>
             
       </form>
     </main>
@@ -69,5 +147,7 @@
 
     <script  src="./js/index.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
 </body>
 </html>

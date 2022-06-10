@@ -22,9 +22,52 @@ html{
 
 
 /*ESTILOS PARA PANTALLAS PEQUEÑAS*/
-@media screen and (max-width:599px) {
+@media screen and (max-width:447px) {
 
- 
+.header{
+    display: flex;
+    background-image: url(../img/granEmp1.jpg);
+    background-size:contain;
+    background-repeat:no-repeat;
+    flex-direction: column;
+    max-width: 447px;
+    align-items: center;
+    
+    
+    
+}
+
+.header__divh2{
+    margin-top: 200px;
+    max-width: 100%;
+    color:#010f4f;
+    align-items: center;
+    font-size: x-large;
+
+
+}
+
+.main{
+    display: flex;
+    background-image: url(../img/medio.jpg);
+    background-size: contain;
+    background-repeat: round;
+    flex-direction: column;
+    max-width: 100%;
+    
+}
+
+
+.form__parrafo__TextArea{
+    display: none;
+    width: 100%;
+    
+}
+
+.form__parrafo__TextareaR{
+    width: 100%;
+    margin-left: 5px;
+}
 
 .imgcheckB{
     display: none;
@@ -34,18 +77,20 @@ html{
     display: none;
 }
 
+/*
 .form .form__parrafo__divcheckBox label {
     color:#0074D9;
     background: rgba(0, 0, 0, .1);
-    padding:  5px 15px 7px 51px;
+    padding:  5px 15px 7px;
     display: inline-block;
     position: relative;
     font-size: 1em;
     border-radius: 3px;
     cursor:pointer;
+    margin-bottom: 5px;
 
 }
-
+*/
 
 .form .form__parrafo__divcheckBox label:hover{
     background: rgba(0, 116, 217, 0.3);
@@ -57,7 +102,7 @@ html{
     height: 17px;
     display: inline-block;
     background: none;
-    border: 3px solid #0774d9;
+    border: 3px solid #010f4f;
     border-radius: 50%;
     position: absolute;
     left:17px;
@@ -66,7 +111,7 @@ html{
 
 .form input[type="checkbox"]:checked + label{
     padding: 5px 15px;
-    background: #0074D9;
+    background: #010f4f;
     border-radius: 2px;
     color:#fff
 }
@@ -77,7 +122,71 @@ html{
 }
 
 
+.labelsi{
+    color:#010f4f;
+    background: rgba(0, 0, 0, .1);
+    padding:  5px 15px 7px 60px;
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+    border-radius: 3px;
+    cursor:pointer;
+    margin-bottom: 5px;
+}
 
+.labelno{
+    color:#010f4f;
+    background: rgba(0, 0, 0, .1);
+    padding:  5px 15px 7px 51px;
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+    border-radius: 3px;
+    cursor:pointer;
+    margin-bottom: 5px;
+}
+
+.Nbus{
+    color:#000;
+    font-size:larger;
+}
+
+.numberBus{
+    border-radius: 10px;
+    border: solid;
+    border-color:#010f4f;
+    background-color: rgba(0, 0, 0, .1) ;
+    width: 30%;
+    height: 50%;
+}
+
+.icobus{
+    width: 70px;
+    height: 60px;
+}
+
+.form__parrafoNbus{
+    margin-top: 30px;
+    background:#fff;
+    color:eae5e1;
+    width: 95%;
+    padding:16px 4px 16px 0;
+    border-radius:6px;
+    box-shadow:10px 10px 40px -14px #000;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.ButtonSend{
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 40%;
+    display: block;
+    
+}
 
 }
 
@@ -131,23 +240,27 @@ html{
 .form{
     width:100%;
     background:#eae5e1;
-    box-shadow:0 0 40px -10px #000;
+    box-shadow:0 0 0 -10px #000;
     padding:20px 30px;
     box-sizing:border-box;
     font-family:'Montserrat',sans-serif;
+    margin-top: 70px;
+    display: inline-block;
+    
     
 }
 
-.form__h2{
+.header__divh2{
     text-align: center;
-    margin:10px 0;
-    padding-bottom:10px;
     width:100%;
     color:#010f4f;
     display: flex;
 }
 
 
+.form__subparrafo{
+    display: flex;
+}
 
 
 .form__h2__p:before{
@@ -158,25 +271,26 @@ html{
     color:#5a5a5a
 }
 
+.form__parrafo__TextArea{
+    margin-left:13px;
+    width: 90%;
+}
 
 
 
-
-button{
+.ButtonSend{
     
     padding:8px 12px;
-    margin:8px 0 0;
-    font-family:'Montserrat';
     border:2px solid #78788c;
-    background:0;
     color:#5a5a6e;
     cursor:pointer;
-    transition:all .3s;
+    
+
     
 }
 
-button:hover{
-    background:#78788c;
+.ButtonSend:hover{
+    background-color:#010f4f;
     color:#fff
 }
 
@@ -294,10 +408,13 @@ input[type=checkbox] {
     padding:16px 4px 16px 0;
     border-radius:6px;
     box-shadow:10px 10px 40px -14px #000;
-    display:flex;
+    display:block;
     justify-content: center;
    
 }
+
+
+   
 
 
 .form__parrafo__p{
