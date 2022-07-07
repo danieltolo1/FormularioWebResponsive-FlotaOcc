@@ -77,6 +77,13 @@ html{
 }
 
 
+.ButtonSend{
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 100px;
+    display: block;
+    
+}
 
 
 
@@ -233,13 +240,7 @@ html{
 
 
 
-    .ButtonSend{
-        margin-top: 30px;
-        border-radius: 10px;
-        width: 40%;
-        display: block;
-        
-    }
+    
 
     .Nbus{
         padding-left: 5px;
