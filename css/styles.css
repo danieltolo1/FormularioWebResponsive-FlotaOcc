@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=RobINERoto:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
 
@@ -19,11 +19,11 @@ html{
 
 .header{
     display: flex;
-    background-image: url(../img/header2.jpg);
     flex-direction: column;
     align-items: center; 
     background-repeat: no-repeat;
     background-size: contain;
+    background-image: none;
 }
 
 .header__divh2{
@@ -60,6 +60,7 @@ html{
     background-color: rgba(0, 0, 0, .1) ;
     width: 30%;
     text-align: center;
+    height: 30px;
 }
 
 
@@ -84,348 +85,6 @@ html{
     display: block;
     
 }
-
-
-
-
-
-/*ESTILOS PARA PANTALLAS PEQUEÑAS*/
-@media screen and (max-width:486px) {
-
-    .header{
-        display: flex;
-        background-size:contain;
-        background-repeat:no-repeat;
-        flex-direction: column;
-        align-items: center; 
-        max-width: 520px;
-        background-image: url(../img/granEmp1.jpg);
-        }
-
-
-    .header__divh2{
-        margin-top: 200px;
-        max-width: 100%;
-        color:#010f4f;
-        align-items: center;
-        font-size: x-large;
-
-    }
-
-    
-    .main{
-        display: flex;
-        background-image: url(../img/medio.jpg);
-        background-size: contain;
-        background-repeat: round;
-        flex-direction: column;
-        max-width: 100%;
-        
-    }
-
-
-    .form__parrafo__TextArea{
-        display: none;
-        width: 100%;
-        
-    }
-
-    .form__parrafo__TextareaR{
-        width: 100%;
-        margin-left: 5px;
-    }
-
-    .imgcheckB{
-        display: none;
-    }
-
-    .form input[type="checkbox"]{
-        display: none;
-    }
-
-/*
-.form .form__parrafo__divcheckBox label {
-    color:#0074D9;
-    background: rgba(0, 0, 0, .1);
-    padding:  5px 15px 7px;
-    display: inline-block;
-    position: relative;
-    font-size: 1em;
-    border-radius: 3px;
-    cursor:pointer;
-    margin-bottom: 5px;
-
-}
-*/
-
-    .form .form__parrafo__divcheckBox label:hover{
-        background: rgba(0, 116, 217, 0.3);
-    }
-
-    .form .form__parrafo__divcheckBox label:before{
-        content: "";
-        width: 17px;
-        height: 17px;
-        display: inline-block;
-        background: none;
-        border: 3px solid #010f4f;
-        border-radius: 50%;
-        position: absolute;
-        left:17px;
-        bottom: 5px;
-    }
-
-    .form input[type="checkbox"]:checked + label{
-        padding: 5px 15px;
-        background: #010f4f;
-        border-radius: 2px;
-        color:#fff
-    }
-
-
-    .form input[type="checkbox"]:checked + label:before{
-        display: none;
-    }
-
-
-    .labelsi{
-        color:#010f4f;
-        background: rgba(0, 0, 0, .1);
-        padding:  5px 15px 7px 60px;
-        display: inline-block;
-        position: relative;
-        font-size: 1em;
-        border-radius: 3px;
-        cursor:pointer;
-        margin-bottom: 5px;
-    }
-
-    .labelno{
-        color:#010f4f;
-        background: rgba(0, 0, 0, .1);
-        padding:  5px 15px 7px 51px;
-        display: inline-block;
-        position: relative;
-        font-size: 1em;
-        border-radius: 3px;
-        cursor:pointer;
-        margin-bottom: 5px;
-    }
-
-    
-
-    .numberBus{
-        border-radius: 10px;
-        border: solid;
-        border-color:#010f4f;
-        background-color: rgba(0, 0, 0, .1) ;
-        width: 30%;
-        height: 15px;
-    }
-
-    
-
-    .form__parrafoNbus{
-        margin-top: 30px;
-        background:#fff;
-        color:eae5e1;
-        width: 95%;
-        padding:16px 4px 16px 0;
-        border-radius:6px;
-        box-shadow:10px 10px 40px -14px #000;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    .Nbus{
-        padding-left: 5px;
-        
-    }
-
-    .form__parrafo__p{
-        margin-right: 3px;
-    }
-
-    .form__parrafo__TextArea{
-        margin-left:13px;
-        width: 70%;
-    }
-
-    .form__parrafo__TextareaR{
-        width: 100%;
-        margin-left: 5px;
-        
-        
-    }
-    
-    .img_lateral{
-        display: none;
-    }
-
-}
-
-
-
-/*ESTILOS HASTA MAXIMO md 761PX HASTA 1024PX*/
-@media screen and (max-width:657px) {
-
-    .img_lateral{
-        display: none;
-    }
-
-
-}
-
-
-@media screen and (max-width:800px) {
-
-    .header{
-      
-        max-width: 800px;
-    }
-    
-
-    .header__divh2{
-        margin-top: 50%;
-    }
-
-    .form{
-        max-width: 800px;
-    }
-
-    .form__parrafoNbus{
-        width: 75%;
-        height: 45px;
-    }
-
-    .form__parrafo__TextArea{
-        display: none;
-        width: 90%;
-        margin-left: 50px;
-    }
-
-    
-
-    .form__parrafo__TextareaR{
-        width: 100%;
-        margin-left: 5px;
-        
-        
-    }
-
-    .imgcheckB{
-        display: none;
-    }
-
-    .form input[type="checkbox"]{
-        display: none;
-    }
-
-
-    
-
-
-    .form .form__parrafo__divcheckBox label:hover{
-        background: rgba(0, 116, 217, 0.3);
-    }
-
-    .form .form__parrafo__divcheckBox label:before{
-        content: "";
-        width: 17px;
-        height: 17px;
-        display: inline-block;
-        background: none;
-        border: 3px solid #010f4f;
-        border-radius: 50%;
-        position: absolute;
-        left:17px;
-        bottom: 5px;
-    }
-
-    .form input[type="checkbox"]:checked + label{
-        padding: 5px 15px;
-        background: #010f4f;
-        border-radius: 2px;
-        color:#fff
-    }
-
-
-    .form input[type="checkbox"]:checked + label:before{
-        display: none;
-    }
-
-
-    .labelsi{
-        color:#010f4f;
-        background: rgba(0, 0, 0, .1);
-        padding:  5px 15px 7px 60px;
-        display: inline-block;
-        position: relative;
-        font-size: 1em;
-        border-radius: 3px;
-        cursor:pointer;
-        margin-bottom: 5px;
-    }
-
-    .labelno{
-        color:#010f4f;
-        background: rgba(0, 0, 0, .1);
-        padding:  5px 15px 7px 51px;
-        display: inline-block;
-        position: relative;
-        font-size: 1em;
-        border-radius: 3px;
-        cursor:pointer;
-        margin-bottom: 5px;
-    }
-
-    .form__parrafo__TextArea{
-        margin-left:13px;
-        width: 90%;
-    }
-
-  .header__divh2__container{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-
-
-}
-
-
-
-
-
-/*ESTILOS HASTA MAXIMO md 761PX HASTA 1024PX*/
-@media screen and (max-width:1024px) {
-
-
-
-}
-
-
-
-
-/*ESTILOS HASTA MAXIMO lg 1025PX HASTA 1280PX*/
-@media screen and (max-width:1280px) {
-
-
-
-}
-
-
-/*ESTILOS HASTA MAXIMO xl 1025PX HASTA 1280PX*/
-@media screen and (max-width:1280px) {
-
-
-
-}
-
-
-
 
 .form{
     width:100%;
@@ -613,3 +272,381 @@ input[type=checkbox] {
       width: 100px;
       height: 100px;
   }
+
+  .Image-BackgroungHigh{
+      display: none;
+  }
+
+
+
+
+/*----------------------- ESTILOS PARA PANTALLAS PEQUEÑAS ---------------------------*/
+@media screen and (max-width:486px) {
+
+    .header{
+        display: flex;
+        background-size:contain;
+        background-repeat:no-repeat;
+        flex-direction: column;
+        align-items: center; 
+        max-width: 520px;
+        background-image: url(../img/granEmp1.jpg);
+        }
+
+
+    .header__divh2{
+        margin-top: 200px;
+        max-width: 100%;
+        color:#010f4f;
+        align-items: center;
+        font-size: x-large;
+
+    }
+
+    
+    .main{
+        display: flex;
+        background-image: url(../img/medio.jpg);
+        background-size: contain;
+        background-repeat: round;
+        flex-direction: column;
+        max-width: 100%;
+        
+    }
+
+
+    .form__parrafo__TextArea{
+        display: none;
+        width: 100%;
+        
+    }
+
+    .form__parrafo__TextareaR{
+        width: 100%;
+        margin-left: 5px;
+    }
+
+    .imgcheckB{
+        display: none;
+    }
+
+    .form input[type="checkbox"]{
+        display: none;
+    }
+
+/*
+.form .form__parrafo__divcheckBox label {
+    color:#0074D9;
+    background: rgba(0, 0, 0, .1);
+    padding:  5px 15px 7px;
+    display: inline-block;
+    position: relative;
+    font-size: 1em;
+    border-radius: 3px;
+    cursor:pointer;
+    margin-bottom: 5px;
+
+}
+*/
+
+    .form .form__parrafo__divcheckBox label:hover{
+        background: rgba(0, 116, 217, 0.3);
+    }
+
+    .form .form__parrafo__divcheckBox label:before{
+        content: "";
+        width: 17px;
+        height: 17px;
+        display: inline-block;
+        background: none;
+        border: 3px solid #010f4f;
+        border-radius: 50%;
+        position: absolute;
+        left:17px;
+        bottom: 5px;
+    }
+
+    .form input[type="checkbox"]:checked + label{
+        padding: 5px 15px;
+        background: #010f4f;
+        border-radius: 2px;
+        color:#fff
+    }
+
+
+    .form input[type="checkbox"]:checked + label:before{
+        display: none;
+    }
+
+
+    .labelsi{
+        color:#010f4f;
+        background: rgba(0, 0, 0, .1);
+        padding:  5px 15px 7px 60px;
+        display: inline-block;
+        position: relative;
+        font-size: 1em;
+        border-radius: 3px;
+        cursor:pointer;
+        margin-bottom: 5px;
+    }
+
+    .labelno{
+        color:#010f4f;
+        background: rgba(0, 0, 0, .1);
+        padding:  5px 15px 7px 51px;
+        display: inline-block;
+        position: relative;
+        font-size: 1em;
+        border-radius: 3px;
+        cursor:pointer;
+        margin-bottom: 5px;
+    }
+
+    
+
+    .numberBus{
+        border-radius: 10px;
+        border: solid;
+        border-color:#010f4f;
+        background-color: rgba(0, 0, 0, .1) ;
+        width: 30%;
+        height: 20px;
+    }
+
+    
+
+    .form__parrafoNbus{
+        margin-top: 30px;
+        background:#fff;
+        color:eae5e1;
+        width: 95%;
+        padding:16px 4px 16px 0;
+        border-radius:6px;
+        box-shadow:10px 10px 40px -14px #000;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .Nbus{
+        padding-left: 5px;
+        
+    }
+
+    .form__parrafo__p{
+        margin-right: 3px;
+    }
+
+    .form__parrafo__TextArea{
+        margin-left:13px;
+        width: 70%;
+    }
+
+    .form__parrafo__TextareaR{
+        width: 100%;
+        margin-left: 5px;
+        
+        
+    }
+    
+    .img_lateral{
+        display: none;
+    }
+
+}
+
+
+
+/*------------------------ ESTILOS HASTA MAXIMO 657PX ----------------------------------*/
+@media screen and (max-width:657px) {
+
+    .img_lateral{
+        display: none;
+    }
+
+
+}
+
+/*------------------------ ESTILOS MINIMO md 487PX HASTA 800PX ----------------------------------*/
+
+@media screen and (min-width:487px) and (max-width:800px) {
+
+    .header{
+        background-image: url(../img/header2.jpg);
+        max-width: 800px;
+    }
+    
+
+    .header__divh2{
+        margin-top: 50%;
+    }
+
+    .form{
+        max-width: 800px;
+    }
+
+    .form__parrafoNbus{
+        width: 75%;
+        height: 45px;
+    }
+
+    .form__parrafo__TextArea{
+        display: none;
+        width: 90%;
+        margin-left: 50px;
+    }
+
+    
+
+    .form__parrafo__TextareaR{
+        width: 100%;
+        margin-left: 5px;
+        
+        
+    }
+
+    .imgcheckB{
+        display: none;
+    }
+
+    .form input[type="checkbox"]{
+        display: none;
+    }
+
+
+    
+
+
+    .form .form__parrafo__divcheckBox label:hover{
+        background: rgba(0, 116, 217, 0.3);
+    }
+
+    .form .form__parrafo__divcheckBox label:before{
+        content: "";
+        width: 17px;
+        height: 17px;
+        display: inline-block;
+        background: none;
+        border: 3px solid #010f4f;
+        border-radius: 50%;
+        position: absolute;
+        left:17px;
+        bottom: 5px;
+    }
+
+    .form input[type="checkbox"]:checked + label{
+        padding: 5px 15px;
+        background: #010f4f;
+        border-radius: 2px;
+        color:#fff
+    }
+
+
+    .form input[type="checkbox"]:checked + label:before{
+        display: none;
+    }
+
+
+    .labelsi{
+        color:#010f4f;
+        background: rgba(0, 0, 0, .1);
+        padding:  5px 15px 7px 60px;
+        display: inline-block;
+        position: relative;
+        font-size: 1em;
+        border-radius: 3px;
+        cursor:pointer;
+        margin-bottom: 5px;
+    }
+
+    .labelno{
+        color:#010f4f;
+        background: rgba(0, 0, 0, .1);
+        padding:  5px 15px 7px 51px;
+        display: inline-block;
+        position: relative;
+        font-size: 1em;
+        border-radius: 3px;
+        cursor:pointer;
+        margin-bottom: 5px;
+    }
+
+    .form__parrafo__TextArea{
+        margin-left:13px;
+        width: 90%;
+    }
+
+  .header__divh2__container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+
+}
+
+
+
+
+
+/* ------------------------ESTILOS HASTA MAXIMO md 801PX HASTA 1280PX  -------------------------------*/
+
+@media screen and (min-width: 801px) and (max-width:1920px) {
+
+    .header{
+        display: flex;
+       
+        
+        align-items: center; 
+       
+        }
+
+        
+    .header__divh2__container{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    .img_lateral{
+        margin:0%
+        
+    }
+
+
+    .form{
+        margin-top: 20px;
+    }
+
+    .main{
+        display: grid;
+        width: 95%;
+        margin: 0 auto;
+        grid-template-columns: auto auto;
+    
+    }
+
+    .Image-BackgroungHigh{
+        display: flex;
+        width: 500px;
+        height: 500px;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
