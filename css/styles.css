@@ -352,6 +352,9 @@ input[type=checkbox] {
     color: #fff;
 }
 
+.linkSobreN{
+    text-decoration: none;
+}
 
 
 /*----------------------- ESTILOS PARA PANTALLAS PEQUEÑAS ---------------------------*/
@@ -567,7 +570,7 @@ input[type=checkbox] {
         justify-content: center;
         align-items: center;
         margin-right: 0;
-        margin-left: 60px;
+        
         }
 
 }
@@ -738,7 +741,7 @@ input[type=checkbox] {
         justify-content: center;
         align-items: center;
         margin-right: 0;
-        margin-left: 60px;
+       
     }
 
 
