@@ -36,9 +36,7 @@ function saveForm(){
     addForm(snBus,scheckSi1,scheckNo1,stext1,scheckSi2,scheckNo2,stext2,scheckSi3,scheckNo3,stext3,scheckSi4,scheckNo4,stext4);
 }
 
-function drawFormTable(){
 
-}
 
 
 
