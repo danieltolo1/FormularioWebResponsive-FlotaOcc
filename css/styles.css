@@ -48,6 +48,10 @@ html{
     
 }
 
+.mensajeDeErrorNbus{
+    display: none;
+}
+
 .icobus{
     width: 70px;
     height: 60px;
@@ -62,6 +66,27 @@ html{
     text-align: center;
     height: 30px;
 }
+
+.numberBusNegative{
+    border-radius: 10px;
+    border: solid;
+    border-color:#ba0517;
+    background-color: rgba(0, 0, 0, .1) ;
+    width: 30%;
+    text-align: center;
+    height: 30px;
+}
+
+.numberBusAfirmative{
+    border-radius: 10px;
+    border: solid;
+    border-color:#058521;
+    background-color: rgba(0, 0, 0, .1) ;
+    width: 30%;
+    text-align: center;
+    height: 30px;
+}
+
 
 
 .Nbus{
@@ -356,6 +381,26 @@ input[type=checkbox] {
     text-decoration: none;
 }
 
+.mensajeDeErrorNbus-activo{
+    display: block;
+}
+
+.mensajeDeErrorNbus{
+    display: none;
+}
+
+.formulario__mensaje-exito {
+    text-align: center;
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}       
+
+
 
 /*----------------------- ESTILOS PARA PANTALLAS PEQUEÑAS ---------------------------*/
 @media screen and (max-width:486px) {
@@ -571,7 +616,9 @@ input[type=checkbox] {
         align-items: center;
         margin-right: 0;
         
-        }
+    }
+
+   
 
 }
 
@@ -749,7 +796,7 @@ input[type=checkbox] {
         grid-column: 1/3;
     }
 
-    
+ 
 }
 
 
@@ -959,6 +1006,8 @@ input[type=checkbox] {
         grid-template-columns: repeat(3, 1fr);
         padding: 20px 0px ;
     }
+
+   
 
 }
 
