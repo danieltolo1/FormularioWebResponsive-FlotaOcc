@@ -40,23 +40,23 @@ function saveForm(){
 
         if(snBus === ""){
                 alert("Es necesario escribir el Numero del bus ")
-                window.location.reload()  
+                document.getElementById('numberBus').focus(); 
                 return
         }if(scheckNo1 === true && stext1 === ""){
-                alert("Si su respuesta de la pregunta 1 es NO, se necesita escribir el porque")   
-                window.location.reload()  
+                alert("Si su respuesta de la pregunta 1 es NO, se necesita escribir el porque")  
+                document.getElementById('textno1').focus(); 
                 return
         }if(scheckNo2 === true && stext2 === ""){
                  alert("Si su respuesta de la pregunta 2 es NO, se necesita escribir el porque")
-                 window.location.reload()
+                 document.getElementById('textno2').focus(); 
                  return
         }if(scheckNo3 === true && stext3 === ""){
                 alert("Si su respuesta de la pregunta 3 es NO, se necesita escribir el porque")
-                window.location.reload()
+                document.getElementById('textno3').focus();
                 return
         }if(scheckNo4 === true && stext4 === ""){
                 alert("Si su respuesta de la pregunta 4 es NO, se necesita escribir el porque")
-                window.location.reload()
+                document.getElementById('textno4').focus();
                 return
         }else{
                 addForm(snBus,scheckSi1,scheckNo1,stext1,scheckSi2,scheckNo2,stext2,scheckSi3,scheckNo3,stext3,scheckSi4,scheckNo4,stext4);
